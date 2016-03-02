@@ -2,7 +2,9 @@
 A Tree Width Solution Program
 
 run mathod:
+
 make depend
+
 make
 ./main instances/instances_name
 
