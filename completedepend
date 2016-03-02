@@ -1,0 +1,5 @@
+#!/bin/bash
+sed -i 's/^\w\+\./\t$(CC) $(CFLAGS) -o $@ $<\nsource\/&/g' .depend
+sed -i '1d' .depend
+echo '	$(CC) $(CFLAGS) -o $@ $<' >> .depend
+
