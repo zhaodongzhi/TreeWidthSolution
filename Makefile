@@ -14,7 +14,7 @@ everything : $(MAIN)
 depend : $(SOURCE) 
 	rm -f .depend
 	$(CC) -MM $^ -I include > .depend
-	./.completedepend
+	./completedepend
 
 all : realclean everything 
 
